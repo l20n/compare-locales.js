@@ -33,7 +33,8 @@
     "l10n"
   ],
   "devDependencies": {
-    "commander": "~2.0"
+    "commander": "~2.0",
+    "promise": "~5.0"
   },
   "engine": {
     "node": ">=0.10"
