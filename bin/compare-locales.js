@@ -18,7 +18,6 @@ function compareLocales() {
     var lp1 = app.langpacks['en-US'];
     var lp2 = app.langpacks['fr'];
     var lpDiff = compareLangpacks(lp1, lp2);
-    
     var txt = serializeLangpackDiffToText(lpDiff);
     console.log(txt);
   });
