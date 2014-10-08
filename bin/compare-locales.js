@@ -5,10 +5,10 @@
 var program = require('commander');
 
 var GaiaApp = require('../lib/mozilla/apps/gaia.js').GaiaApp;
-var Directory = require('../lib/mozilla/langpack.js').Directory;
-var Langpack = require('../lib/mozilla/langpack.js').Langpack;
-var compareLangpacks = require('../lib/mozilla/compare-locales.js').compareLangpacks;
-var serializeLangpackDiffToText = require('../lib/mozilla/diff.js').serializeLangpackDiffToText;
+var compareLangpacks =
+  require('../lib/mozilla/compare-locales.js').compareLangpacks;
+var serializeLangpackDiffToText =
+  require('../lib/mozilla/diff.js').serializeLangpackDiffToText;
 
 
 var l10nBase = '~/projects/gaia-l10n';
