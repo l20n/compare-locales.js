@@ -10,13 +10,12 @@ var compareLangpacks =
 var serializeLangpackDiffToText =
   require('../lib/mozilla/diff/serialize.js').serializeLangpackDiffToText;
 
-var path1 = '/Users/zbraniecki/projects/gaia/apps/wappush';
 
-function compareLocales() {
-  var app = new GaiaApp(path1);
+function compareLocales(appPath, lang) {
+  var app = new GaiaApp(appPath);
   app.getLangpacks().then(function() {
-    var lp1 = app.langpacks['en-US'];
-    var lp2 = app.langpacks['fr'];
+    var lp1 = app.langpacks[app.defaultLocale];
+    var lp2 = app.langpacks[lang];
     var lpDiff = compareLangpacks(lp1, lp2);
     var txt = serializeLangpackDiffToText(lpDiff);
     console.log(txt);
@@ -27,7 +26,7 @@ function compareLocales() {
 
 program
   .version('0.0.1')
-  .usage('[options] [file]')
+  .usage('[options] webapp locale')
   .parse(process.argv);
 
-compareLocales();
+compareLocales(program.args[0], program.args[1]);
