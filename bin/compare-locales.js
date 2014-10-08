@@ -6,13 +6,9 @@ var program = require('commander');
 
 var GaiaApp = require('../lib/mozilla/apps/gaia.js').GaiaApp;
 var compareLangpacks =
-  require('../lib/mozilla/compare-locales.js').compareLangpacks;
+  require('../lib/mozilla/diff/compare.js').compareLangpacks;
 var serializeLangpackDiffToText =
-  require('../lib/mozilla/diff.js').serializeLangpackDiffToText;
-
-
-var l10nBase = '~/projects/gaia-l10n';
-var locales = ['pl'];
+  require('../lib/mozilla/diff/serialize.js').serializeLangpackDiffToText;
 
 var path1 = '/Users/zbraniecki/projects/gaia/apps/wappush';
 
@@ -21,10 +17,10 @@ function compareLocales() {
   app.getLangpacks().then(function() {
     var lp1 = app.langpacks['en-US'];
     var lp2 = app.langpacks['fr'];
-    compareLangpacks(lp1, lp2).then(function(lpDiff) {
-      var txt = serializeLangpackDiffToText(lpDiff);
-      console.log(txt);
-    });
+    var lpDiff = compareLangpacks(lp1, lp2);
+    
+    var txt = serializeLangpackDiffToText(lpDiff);
+    console.log(txt);
   });
 
 }
