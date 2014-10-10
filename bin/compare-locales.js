@@ -10,6 +10,7 @@ var compareLangpacks =
 var serializeLangpackDiffToText =
   require('../lib/mozilla/diff/serialize.js').serializeLangpackDiffToText;
 
+var langPath = '/Users/zbraniecki/projects/gaia-l10n/master/fr';
 
 function compareLocales(appPath, lang) {
   var app = new GaiaApp(appPath);

@@ -32,8 +32,9 @@
     "localization",
     "l10n"
   ],
-  "devDependencies": {
+  "dependencies": {
     "commander": "~2.0",
+    "deep-equal": "^0.2.1",
     "promise": "~5.0"
   },
   "engine": {
