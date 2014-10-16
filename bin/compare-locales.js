@@ -29,7 +29,7 @@ function compareLocales2(appPath, langPath, lang) {
 
   app.collectResources().then(function() {
 
-    var lp = app.getLangpackFromPath(langPath);
+    var lp = app.getLangpackFromPath(langPath, lang);
 
     app.getLangpacks().then(function() {
       var lp1 = app.langpacks[app.defaultLocale];
