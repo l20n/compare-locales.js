@@ -11,7 +11,7 @@ gulp.task('test', function () {
 });
 
 gulp.task('lint', function() {
-    return gulp.src('./{bin,lib,tests}/*.js')
+    return gulp.src('./{bin,lib,tests}/**/*.js')
       .pipe(jshint())
       .pipe(jshint.reporter(stylish));
 });

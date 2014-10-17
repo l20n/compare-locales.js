@@ -8,7 +8,7 @@ locales/clock.fr.properties
     -label
     -default
     -color
-locales/alarms.fr.properties -  missing resource
+locales/alarms.fr.properties - missing resource
 ==================
 unchanged: 5
 changed: 122
