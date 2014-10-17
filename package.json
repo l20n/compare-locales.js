@@ -40,5 +40,9 @@
   },
   "engine": {
     "node": ">=0.10"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-mocha": "^1.1.1"
   }
 }

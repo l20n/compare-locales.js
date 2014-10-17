@@ -1,0 +1,1737 @@
+{
+  "code": "fr",
+  "entries": [
+    [
+      "present",
+      "/shared/locales/date/date.{locale}.properties",
+      {
+        "entries": [
+          [
+            "present",
+            "weekday-0-long",
+            {
+              "id": "weekday-0-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weekday-1-long",
+            {
+              "id": "weekday-1-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weekday-2-long",
+            {
+              "id": "weekday-2-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weekday-3-long",
+            {
+              "id": "weekday-3-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weekday-4-long",
+            {
+              "id": "weekday-4-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weekday-5-long",
+            {
+              "id": "weekday-5-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weekday-6-long",
+            {
+              "id": "weekday-6-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weekday-0-short",
+            {
+              "id": "weekday-0-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weekday-1-short",
+            {
+              "id": "weekday-1-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weekday-2-short",
+            {
+              "id": "weekday-2-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weekday-3-short",
+            {
+              "id": "weekday-3-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weekday-4-short",
+            {
+              "id": "weekday-4-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weekday-5-short",
+            {
+              "id": "weekday-5-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weekday-6-short",
+            {
+              "id": "weekday-6-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-0-long",
+            {
+              "id": "month-0-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-1-long",
+            {
+              "id": "month-1-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-2-long",
+            {
+              "id": "month-2-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-3-long",
+            {
+              "id": "month-3-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-4-long",
+            {
+              "id": "month-4-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-5-long",
+            {
+              "id": "month-5-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-6-long",
+            {
+              "id": "month-6-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-7-long",
+            {
+              "id": "month-7-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-8-long",
+            {
+              "id": "month-8-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-9-long",
+            {
+              "id": "month-9-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-10-long",
+            {
+              "id": "month-10-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-11-long",
+            {
+              "id": "month-11-long",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-0-genitive",
+            {
+              "id": "month-0-genitive",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-1-genitive",
+            {
+              "id": "month-1-genitive",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-2-genitive",
+            {
+              "id": "month-2-genitive",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-3-genitive",
+            {
+              "id": "month-3-genitive",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-4-genitive",
+            {
+              "id": "month-4-genitive",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-5-genitive",
+            {
+              "id": "month-5-genitive",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-6-genitive",
+            {
+              "id": "month-6-genitive",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-7-genitive",
+            {
+              "id": "month-7-genitive",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-8-genitive",
+            {
+              "id": "month-8-genitive",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-9-genitive",
+            {
+              "id": "month-9-genitive",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-10-genitive",
+            {
+              "id": "month-10-genitive",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-11-genitive",
+            {
+              "id": "month-11-genitive",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-0-short",
+            {
+              "id": "month-0-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-1-short",
+            {
+              "id": "month-1-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-2-short",
+            {
+              "id": "month-2-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-3-short",
+            {
+              "id": "month-3-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-4-short",
+            {
+              "id": "month-4-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-5-short",
+            {
+              "id": "month-5-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-6-short",
+            {
+              "id": "month-6-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-7-short",
+            {
+              "id": "month-7-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-8-short",
+            {
+              "id": "month-8-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-9-short",
+            {
+              "id": "month-9-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-10-short",
+            {
+              "id": "month-10-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "month-11-short",
+            {
+              "id": "month-11-short",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "minutes-ago-long",
+            {
+              "id": "minutes-ago-long",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "hours-ago-long",
+            {
+              "id": "hours-ago-long",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "days-ago-long",
+            {
+              "id": "days-ago-long",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weeks-ago-long",
+            {
+              "id": "weeks-ago-long",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "months-ago-long",
+            {
+              "id": "months-ago-long",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "years-ago-long",
+            {
+              "id": "years-ago-long",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "minutes-until-long",
+            {
+              "id": "minutes-until-long",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "hours-until-long",
+            {
+              "id": "hours-until-long",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "days-until-long",
+            {
+              "id": "days-until-long",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weeks-until-long",
+            {
+              "id": "weeks-until-long",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "months-until-long",
+            {
+              "id": "months-until-long",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "years-until-long",
+            {
+              "id": "years-until-long",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "minutes-ago-short",
+            {
+              "id": "minutes-ago-short",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "hours-ago-short",
+            {
+              "id": "hours-ago-short",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "days-ago-short",
+            {
+              "id": "days-ago-short",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "minutes-until-short",
+            {
+              "id": "minutes-until-short",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "hours-until-short",
+            {
+              "id": "hours-until-short",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "days-until-short",
+            {
+              "id": "days-until-short",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "incorrectDate",
+            {
+              "id": "incorrectDate",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "dateTimeFormat_%c",
+            {
+              "id": "dateTimeFormat_%c",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "dateTimeFormat_%x",
+            {
+              "id": "dateTimeFormat_%x",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "dateTimeFormat_%X",
+            {
+              "id": "dateTimeFormat_%X",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "shortTimeFormat",
+            {
+              "id": "shortTimeFormat",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "missing",
+            "shortTimeFormat12"
+          ],
+          [
+            "missing",
+            "shortTimeFormat24"
+          ],
+          [
+            "present",
+            "shortDateTimeFormat",
+            {
+              "id": "shortDateTimeFormat",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weekStartsOnMonday",
+            {
+              "id": "weekStartsOnMonday",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "time_am",
+            {
+              "id": "time_am",
+              "elements": [
+                [
+                  "unchanged",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "time_pm",
+            {
+              "id": "time_pm",
+              "elements": [
+                [
+                  "unchanged",
+                  "value"
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "present",
+      "locales/clock.{locale}.properties",
+      {
+        "entries": [
+          [
+            "present",
+            "reset",
+            {
+              "id": "reset",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "start",
+            {
+              "id": "start",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "stop",
+            {
+              "id": "stop",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "cancel",
+            {
+              "id": "cancel",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "hour",
+            {
+              "id": "hour",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "hours",
+            {
+              "id": "hours",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "minute",
+            {
+              "id": "minute",
+              "elements": [
+                [
+                  "unchanged",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "minutes",
+            {
+              "id": "minutes",
+              "elements": [
+                [
+                  "unchanged",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "alarm",
+            {
+              "id": "alarm",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "timer",
+            {
+              "id": "timer",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "stopwatch",
+            {
+              "id": "stopwatch",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "alarmName",
+            {
+              "id": "alarmName",
+              "elements": [
+                [
+                  "changed",
+                  "attribute",
+                  "placeholder"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "newAlarm",
+            {
+              "id": "newAlarm",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "editAlarm",
+            {
+              "id": "editAlarm",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "pause",
+            {
+              "id": "pause",
+              "elements": [
+                [
+                  "unchanged",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "resume",
+            {
+              "id": "resume",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "lap",
+            {
+              "id": "lap",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "lap-number",
+            {
+              "id": "lap-number",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "delete",
+            {
+              "id": "delete",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "time",
+            {
+              "id": "time",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "snooze-label",
+            {
+              "id": "snooze-label",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "snooze-button",
+            {
+              "id": "snooze-button",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "repeat",
+            {
+              "id": "repeat",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "vibrate",
+            {
+              "id": "vibrate",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "close",
+            {
+              "id": "close",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "save",
+            {
+              "id": "save",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "done",
+            {
+              "id": "done",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "closeButton",
+            {
+              "id": "closeButton",
+              "elements": [
+                [
+                  "changed",
+                  "attribute",
+                  "ariaLabel"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "newAlarmButton",
+            {
+              "id": "newAlarmButton",
+              "elements": [
+                [
+                  "changed",
+                  "attribute",
+                  "ariaLabel"
+                ]
+              ]
+            }
+          ],
+          [
+            "missing",
+            "alarm-volume-label"
+          ],
+          [
+            "present",
+            "sound",
+            {
+              "id": "sound",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "noSound",
+            {
+              "id": "noSound",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "everyday",
+            {
+              "id": "everyday",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weekdays",
+            {
+              "id": "weekdays",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "weekends",
+            {
+              "id": "weekends",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "never",
+            {
+              "id": "never",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "vibrateOn",
+            {
+              "id": "vibrateOn",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "vibrateOff",
+            {
+              "id": "vibrateOff",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "plusMinute",
+            {
+              "id": "plusMinute",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "dateFormat",
+            {
+              "id": "dateFormat",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "countdown-lessThanAnHour",
+            {
+              "id": "countdown-lessThanAnHour",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "countdown-moreThanAnHour",
+            {
+              "id": "countdown-moreThanAnHour",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "countdown-moreThanADay",
+            {
+              "id": "countdown-moreThanADay",
+              "elements": [
+                [
+                  "changed",
+                  "value"
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "nMinutes",
+            {
+              "id": "nMinutes",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "nHours",
+            {
+              "id": "nHours",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "nAndRemainHours",
+            {
+              "id": "nAndRemainHours",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "nRemainDays",
+            {
+              "id": "nRemainDays",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "nRemainMinutes",
+            {
+              "id": "nRemainMinutes",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "nSpinnerSeconds",
+            {
+              "id": "nSpinnerSeconds",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "nSpinnerMinutes",
+            {
+              "id": "nSpinnerMinutes",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "present",
+            "nSpinnerHours",
+            {
+              "id": "nSpinnerHours",
+              "elements": [
+                [
+                  "changed",
+                  "value",
+                  null
+                ]
+              ]
+            }
+          ],
+          [
+            "obsolete",
+            "enable"
+          ],
+          [
+            "obsolete",
+            "back"
+          ],
+          [
+            "obsolete",
+            "label"
+          ],
+          [
+            "obsolete",
+            "default"
+          ],
+          [
+            "obsolete",
+            "color"
+          ]
+        ]
+      }
+    ],
+    [
+      "missing",
+      "locales/alarms.{locale}.properties"
+    ]
+  ]
+}
