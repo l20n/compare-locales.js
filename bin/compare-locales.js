@@ -33,7 +33,6 @@ function compareLocales2(appPath, langPath, lang) {
 
     app.getLangpacks().then(function() {
       var lp1 = app.langpacks[app.defaultLocale];
-      var lp2 = app.langpacks[lang];
       var lpDiff = compareLangpacks(lp1, lp);
       var txt = serializeLangpackDiffToText(lpDiff);
       console.log(txt);

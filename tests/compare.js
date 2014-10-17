@@ -35,7 +35,10 @@ suite('Compare langpacks 2 args', function() {
     var outputPath = path.join(__dirname, 'fixtures', 'output.txt');
 
     fs.readFile(outputPath, {encoding: 'utf8'}, function(err, data) {
-      if (err) throw err;
+      if (err) {
+        throw err;
+      }
+
       assert.equal(txt, data.slice(0, -1));
       done();
     });
