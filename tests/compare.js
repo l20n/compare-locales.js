@@ -30,18 +30,20 @@ suite('Compare langpacks 2 args', function() {
   });
 
   test('compares two langpacks', function(done) {
-    var lpDiff = compareLangpacks(lp1, lp2);
-    var txt = serializeLangpackDiffToText(lpDiff);
     var outputPath = path.join(__dirname, 'fixtures', 'output.txt');
 
-    fs.readFile(outputPath, {encoding: 'utf8'}, function(err, data) {
-      if (err) {
-        throw err;
-      }
+    compareLangpacks(lp1, lp2).then(
+      serializeLangpackDiffToText).then(function(txt) {
+        fs.readFile(outputPath, {encoding: 'utf8'}, function(err, data) {
+          if (err) {
+            throw err;
+          }
 
-      assert.equal(txt, data.slice(0, -1));
-      done();
+          assert.equal(txt, data.slice(0, -1));
+          done();
+        });
     });
+
   });
 
 });
