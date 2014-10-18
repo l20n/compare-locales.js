@@ -17,9 +17,9 @@ function compareLocales(appPath, lang) {
     app.getLangpacks().then(function() {
       var lp1 = app.langpacks[app.defaultLocale];
       var lp2 = app.langpacks[lang];
-      var lpDiff = compareLangpacks(lp1, lp2);
-      var txt = serializeLangpackDiffToText(lpDiff);
-      console.log(txt);
+      compareLangpacks(lp1, lp2).then(
+        serializeLangpackDiffToText).then(
+          console.log);
     });
   });
 }
@@ -33,9 +33,9 @@ function compareLocales2(appPath, langPath, lang) {
 
     app.getLangpacks().then(function() {
       var lp1 = app.langpacks[app.defaultLocale];
-      var lpDiff = compareLangpacks(lp1, lp);
-      var txt = serializeLangpackDiffToText(lpDiff);
-      console.log(txt);
+      compareLangpacks(lp1, lp).then(
+        serializeLangpackDiffToText).then(
+          console.log);
     });
   });
 }
