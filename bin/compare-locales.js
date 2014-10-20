@@ -3,12 +3,16 @@
 'use strict';
 
 var program = require('commander');
+var path = require('path');
 
 var GaiaApp = require('../lib/mozilla/apps/gaia.js').GaiaApp;
 var compareLangpacks =
   require('../lib/mozilla/diff/compare.js').compareLangpacks;
 var serializeLangpackDiffToText =
   require('../lib/mozilla/diff/serialize.js').serializeLangpackDiffToText;
+
+
+var getLangpackFromDir = require('../lib/mozilla/langpack.js').getLangpackFromDir;
 
 function compareLocales(appPath, lang) {
   var app = new GaiaApp(appPath);
@@ -40,13 +44,38 @@ function compareLocales2(appPath, langPath, lang) {
   });
 }
 
+function compareLocales3(l10nPath, sourceLocale, locale) {
+  var path1 = path.join(l10nPath, sourceLocale);
+  var path2 = path.join(l10nPath, locale);
+  var lp1 = getLangpackFromDir(path1);
+  var lp2 = getLangpackFromDir(path2);
+
+  compareLangpacks(lp1, lp2).then(
+    serializeLangpackDiffToText).then(
+      console.log);
+}
+
 program
   .version('0.0.1')
-  .usage('[options] webapp locale')
+  .usage('[options] locale, [locale]')
+  .option('-g, --gaia <dir>', 'Gaia dir')
+  .option('-a, --app <dir>', 'App dir')
+  .option('-l, --gaia-l10n <dir>', 'Gaia l10n dir')
+  .option('-s, --source-locale <locale>', 'Source locale')
   .parse(process.argv);
 
-if (program.args.length === 3) {
-  compareLocales2(program.args[0], program.args[1], program.args[2]);
+var gaiaPath = program.gaia;
+var appPath = program.app;
+var l10nPath = program.gaiaL10n;
+var sourceLocale = program.sourceLocale || 'en-US';
+var locales = program.args;
+
+if (appPath) {
+  if (l10nPath) {
+    compareLocales2(appPath, l10nPath, locales[0]);
+  } else {
+    compareLocales(appPath, locales[0]);
+  }
 } else {
-  compareLocales(program.args[0], program.args[1]);
+  compareLocales3(l10nPath, sourceLocale, locales[0]);
 }
