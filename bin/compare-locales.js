@@ -55,6 +55,15 @@ function compareLocales3(l10nPath, sourceLocale, locale) {
       console.log);
 }
 
+function compareLocales4(path1, path2) {
+  var lp1 = getLangpackFromDir(path1);
+  var lp2 = getLangpackFromDir(path2);
+
+  compareLangpacks(lp1, lp2).then(
+    serializeLangpackDiffToText).then(
+      console.log);
+}
+
 program
   .version('0.0.1')
   .usage('[options] locale, [locale]')
@@ -76,6 +85,8 @@ if (appPath) {
   } else {
     compareLocales(appPath, locales[0]);
   }
-} else {
+} else if (l10nPath) {
   compareLocales3(l10nPath, sourceLocale, locales[0]);
+} else {
+  compareLocales4(locales[0], locales[1]);
 }
