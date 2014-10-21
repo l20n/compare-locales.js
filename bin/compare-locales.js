@@ -47,8 +47,8 @@ function compareLocales2(appPath, langPath, lang) {
 function compareLocales3(l10nPath, sourceLocale, locale) {
   var path1 = path.join(l10nPath, sourceLocale);
   var path2 = path.join(l10nPath, locale);
-  var lp1 = getLangpackFromDir(path1);
-  var lp2 = getLangpackFromDir(path2);
+  var lp1 = getLangpackFromDir(path1, sourceLocale);
+  var lp2 = getLangpackFromDir(path2, locale);
 
   compareLangpacks(lp1, lp2).then(
     serializeLangpackDiffToText).then(
