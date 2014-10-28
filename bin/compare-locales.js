@@ -10,7 +10,7 @@ var serializeLangpackDiffToText =
 var cl = require('../lib/mozilla/compare-locales.js');
 
 function compareLangpacksInSource(appPath, sourceLocale, locale) {
-  compareLangpacksInSource(appPath, sourceLocale, locale).then(
+  cl.compareLangpacksInSource(appPath, sourceLocale, locale).then(
     serializeLangpackDiffToText).then(
       console.log);
 }
@@ -35,14 +35,13 @@ function compareDirs(path1, path2) {
 
 program
   .version('0.0.1')
-  .usage('[options] locale, [locale]')
+  .usage('[options] locale[, locale]')
   .option('-g, --gaia <dir>', 'Gaia dir')
   .option('-a, --app <dir>', 'App dir')
   .option('-l, --gaia-l10n <dir>', 'Gaia l10n dir')
   .option('-s, --source-locale <locale>', 'Source locale')
   .parse(process.argv);
 
-var gaiaPath = program.gaia;
 var appPath = program.app;
 var l10nPath = program.gaiaL10n;
 var sourceLocale = program.sourceLocale;
