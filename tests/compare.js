@@ -1,49 +1,35 @@
 'use strict';
 
-/* global suite, suiteSetup, test */
+/* global suite, test */
 
 var fs = require('fs');
 var path = require('path');
 var assert = require('assert');
 
-var GaiaApp = require('../lib/mozilla/apps/gaia.js').GaiaApp;
-var compareLangpacks =
-  require('../lib/mozilla/diff/compare.js').compareLangpacks;
+var cl = require('../lib/mozilla/compare-locales.js');
 var serializeLangpackDiffToText =
   require('../lib/mozilla/diff/serialize.js').serializeLangpackDiffToText;
 
-suite('Compare langpacks 2 args', function() {
-  var lp1, lp2;
+function checkOutput(done, fixture, output) {
+  fs.readFile(fixture, {encoding: 'utf8'}, function(err, data) {
+    if (err) {
+      throw err;
+    }
 
-  suiteSetup(function(done) {
-    var lang = 'fr';
-    var app = new GaiaApp(path.join(__dirname, 'fixtures', 'apps', 'clock'));
-
-    app.collectResources().then(function() {
-      app.getLangpacks().then(function() {
-        lp1 = app.langpacks[app.defaultLocale];
-        lp2 = app.langpacks[lang];
-        done();
-      });
-    });
-
+    assert.equal(output, data.slice(0, -1));
+    done();
   });
+}
+
+suite('Compare langpacks in source', function() {
 
   test('compares two langpacks', function(done) {
+    var appPath = path.join(__dirname, 'fixtures', 'apps', 'clock');
     var outputPath = path.join(__dirname, 'fixtures', 'output.txt');
 
-    compareLangpacks(lp1, lp2).then(
-      serializeLangpackDiffToText).then(function(txt) {
-        fs.readFile(outputPath, {encoding: 'utf8'}, function(err, data) {
-          if (err) {
-            throw err;
-          }
-
-          assert.equal(txt, data.slice(0, -1));
-          done();
-        });
-    });
-
+    cl.compareLangpacksInSource(appPath, null, 'fr').then(
+      serializeLangpackDiffToText).then(
+        checkOutput.bind(null, done, outputPath)).catch(console.error);
   });
 
 });

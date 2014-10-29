@@ -9,28 +9,32 @@ var serializeLangpackDiffToText =
 
 var cl = require('../lib/mozilla/compare-locales.js');
 
+function logError(e) {
+  console.log(e.stack);
+}
+
 function compareLangpacksInSource(appPath, sourceLocale, locale) {
   cl.compareLangpacksInSource(appPath, sourceLocale, locale).then(
     serializeLangpackDiffToText).then(
-      console.log);
+      console.log, logError);
 }
 
 function compareL10nDirToSource(appPath, sourceLocale, langPath, lang) {
   cl.compareL10nDirToSource(appPath, sourceLocale, langPath, lang).then(
     serializeLangpackDiffToText).then(
-      console.log);
+      console.log, logError);
 }
 
 function compareL10nTreeDirs(l10nPath, sourceLocale, locale) {
   cl.compareL10nTreeDirs(l10nPath, sourceLocale, locale).then(
     serializeLangpackDiffToText).then(
-      console.log);
+      console.log, logError);
 }
 
 function compareDirs(path1, path2) {
   cl.compareDirs(path1, path2).then(
     serializeLangpackDiffToText).then(
-      console.log);
+      console.log, logError);
 }
 
 program
