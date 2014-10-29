@@ -1,0 +1,18 @@
+apps/clock/alarms.properties
+    // add and localize this file
+apps/clock/clock.properties
+    +alarm-volume-label
+    -enable
+    -back
+    -label
+    -default
+    -color
+shared/date/date.properties
+    +shortTimeFormat12
+    +shortTimeFormat24
+==================
+unchanged: 5
+changed: 124
+obsolete: 5
+missing: 3
+93% of entries changed
