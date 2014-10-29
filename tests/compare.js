@@ -21,6 +21,10 @@ function checkOutput(done, fixture, output) {
   });
 }
 
+function logError(e) {
+  console.error(e.stack);
+}
+
 suite('Compare langpacks in source', function() {
 
   test('compares two langpacks', function(done) {
@@ -29,7 +33,7 @@ suite('Compare langpacks in source', function() {
 
     cl.compareLangpacksInSource(appPath, null, 'fr').then(
       serializeLangpackDiffToText).then(
-        checkOutput.bind(null, done, outputPath)).catch(console.error);
+        checkOutput.bind(null, done, outputPath)).catch(logError);
   });
 
 });
