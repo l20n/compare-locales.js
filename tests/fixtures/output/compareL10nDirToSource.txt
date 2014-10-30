@@ -1,4 +1,3 @@
-2
 locales/alarms.fr.properties
     +ac_awake_opus
     +ac_crystalize_opus
