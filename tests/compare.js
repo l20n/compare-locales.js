@@ -8,7 +8,7 @@ var assert = require('assert');
 
 var cl = require('../lib/mozilla/compare-locales.js');
 var serializeLangpackDiffToText =
-  require('../lib/mozilla/diff/serialize.js').serializeLangpackDiffToText;
+  require('../lib/mozilla/diff/serializer/text.js').serializeLangpackDiff;
 
 function getOutputPath(name) {
   return path.join(__dirname, 'fixtures', 'output', name + '.txt');
