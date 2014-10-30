@@ -6,9 +6,9 @@ var fs = require('fs');
 var path = require('path');
 var assert = require('assert');
 
-var cl = require('../lib/mozilla/compare-locales.js');
+var cl = require('../lib/mozilla/compare-locales');
 var serializeLangpackDiffToText =
-  require('../lib/mozilla/diff/serializer/text.js').serializeLangpackDiff;
+  require('../lib/mozilla/diff/serializer/text').serializeLangpackDiff;
 
 function getOutputPath(name) {
   return path.join(__dirname, 'fixtures', 'output', name + '.txt');

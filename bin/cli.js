@@ -5,9 +5,9 @@
 var program = require('commander');
 
 var serializeLangpackDiffToText =
-  require('../lib/mozilla/diff/serializer/text.js').serializeLangpackDiff;
+  require('../lib/mozilla/diff/serializer/text').serializeLangpackDiff;
 
-var cl = require('../lib/mozilla/compare-locales.js');
+var cl = require('../lib/mozilla/compare-locales');
 
 function logError(e) {
   console.log(e.stack);
