@@ -1,27 +1,18 @@
+/shared/locales/date/date.fr.properties
+    +shortTimeFormat12
+    +shortTimeFormat24
+locales/clock.fr.properties
+    +alarm-volume-label
+    -enable
+    -back
+    -label
+    -default
+    -color
 locales/alarms.fr.properties
-    +ac_awake_opus
-    +ac_crystalize_opus
-    +ac_cycle_opus
-    +ac_digicloud_opus
-    +ac_humming_waves_opus
-    +ac_into_the_void_opus
-    +ac_lightly_opus
-    +ac_mobile_opus
-    +ac_pinger_opus
-    +ac_skip_opus
-    +ac_tri_opus
-    +ac_universal_opus
-    -ac_classic_clock_alarm_opus
-    -ac_classic_clock_alarm_prog_opus2
-    -ac_classic_clock_radio_opus
-    -ac_normal_gem_echoes_opus
-    -ac_soft_smooth_strings_opus
-    -ac_soft_humming_waves_opus
-    -ac_normal_ringing_strings_opus
-    -ac_soft_into_the_void_opus
+    // add and localize this file
 ==================
-unchanged: 7
-changed: 123
-obsolete: 8
-missing: 12
-86% of entries changed
+unchanged: 5
+changed: 122
+obsolete: 5
+missing: 3
+93% of entries changed
