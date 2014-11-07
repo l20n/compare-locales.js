@@ -50,13 +50,6 @@ suite('Comparison modes', function() {
           .catch(logError);
   });
 
-  test('compare l10n tree dirs', function(done) {
-    cl.compareL10nTreeDirs(l10nPath, null, 'fr').then(
-      serializeLangpackDiffToText).then(
-        checkOutput.bind(null, done, 'compareL10nTreeDirs'))
-          .catch(logError);
-  });
-
   test('compare dirs', function(done) {
     cl.compareDirs(enUSPath, frPath).then(
       serializeLangpackDiffToText).then(

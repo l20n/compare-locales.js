@@ -25,12 +25,6 @@ function compareL10nDirToSource(appPath, sourceLocale, langPath, lang) {
       console.log, logError);
 }
 
-function compareL10nTreeDirs(l10nPath, sourceLocale, locale) {
-  cl.compareL10nTreeDirs(l10nPath, sourceLocale, locale).then(
-    serializeLangpackDiffToText).then(
-      console.log, logError);
-}
-
 function compareDirs(path1, path2, output) {
   var serializerPath = '../lib/mozilla/diff/serializer/'+output+'.js';
   var serializeLangpackDiff =
@@ -62,8 +56,6 @@ if (appPath) {
   } else {
     compareLangpacksInSource(appPath, sourceLocale, locales[0]);
   }
-} else if (l10nPath) {
-  compareL10nTreeDirs(l10nPath, sourceLocale, locales[0]);
 } else {
   compareDirs(locales[0], locales[1], output);
 }
