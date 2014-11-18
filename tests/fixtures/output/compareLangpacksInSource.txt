@@ -22,4 +22,5 @@ changed: 122
 obsolete: 5
 missing: 3
 malformed: 1
+warnings: 3
 93% of entries changed
