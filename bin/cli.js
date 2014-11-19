@@ -50,7 +50,8 @@ program
   .option('-l, --gaia-l10n <dir>', 'Gaia l10n dir')
   .option('-o, --output <json|text>', 'Output type (default: text)', 'text')
   .option('-s, --source-locale <locale>', 'Source locale')
-  .option('-c, --check-more', 'Check more', checkMore, levels.CRITICAL)
+  .option('-c, --check-more', 'Check more (can be used more than once)',
+          checkMore, levels.CRITICAL)
   .parse(process.argv);
 
 var appPath = program.app;
