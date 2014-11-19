@@ -40,7 +40,7 @@ program
   .option('-g, --gaia <dir>', 'Gaia dir')
   .option('-a, --app <dir>', 'App dir')
   .option('-l, --gaia-l10n <dir>', 'Gaia l10n dir')
-  .option('-o, --output <json|text>', 'Output type (default: text)')
+  .option('-o, --output <json|text>', 'Output type (default: text)', 'text')
   .option('-s, --source-locale <locale>', 'Source locale')
   .parse(process.argv);
 
@@ -48,14 +48,14 @@ var appPath = program.app;
 var l10nPath = program.gaiaL10n;
 var sourceLocale = program.sourceLocale;
 var locales = program.args;
-var output = program.output || 'text';
+var output = program.output;
 
-if (appPath) {
-  if (l10nPath) {
-    compareL10nDirToSource(appPath, sourceLocale, l10nPath, locales[0]);
-  } else {
-    compareLangpacksInSource(appPath, sourceLocale, locales[0]);
-  }
+if (!appPath) {
+  return compareDirs(locales[0], locales[1], output);
+}
+
+if (l10nPath) {
+  compareL10nDirToSource(appPath, sourceLocale, l10nPath, locales[0]);
 } else {
-  compareDirs(locales[0], locales[1], output);
+  compareLangpacksInSource(appPath, sourceLocale, locales[0]);
 }
