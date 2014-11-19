@@ -34,11 +34,11 @@
     "l10n"
   ],
   "dependencies": {
-    "commander": "~2.0",
+    "commander": "^2.5.0",
     "deep-equal": "^0.2.1",
     "es6-set": "^0.1.1",
     "jsdom": "^1.0.3",
-    "promise": "~5.0"
+    "promise": "^6.0.1"
   },
   "engine": {
     "node": ">=0.10"
