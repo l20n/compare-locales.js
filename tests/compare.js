@@ -64,7 +64,7 @@ suite('Comparison modes', function() {
 });
 
 suite('Checks', function() {
-  test('rogue placeables are reported as warnings', function(done) {
+  test('rogue placeables are reported as errors', function(done) {
     var config = {
       checkMore: levels.WARNING
     };
@@ -75,11 +75,11 @@ suite('Checks', function() {
           .catch(logError);
   });
 
-  test('rogue placeables are not reported if config accepts only errors',
+  test('rogue placeables are not reported if config accepts only criticals',
     function(done) {
 
     var config = {
-      checkMore: levels.ERROR
+      checkMore: levels.CRITICAL
     };
 
     cl.compareDirs(config, enUSPath, frPath).then(
