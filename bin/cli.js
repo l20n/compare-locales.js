@@ -6,6 +6,7 @@ var program = require('commander');
 
 var serializeLangpackDiffToText =
   require('../lib/mozilla/diff/serializer/text').serializeLangpackDiff;
+var levels = require('../lib/mozilla/diff/levels');
 
 var cl = require('../lib/mozilla/compare-locales');
 
@@ -14,24 +15,31 @@ function logError(e) {
 }
 
 function compareLangpacksInSource(appPath, sourceLocale, locale) {
-  cl.compareLangpacksInSource(appPath, sourceLocale, locale).then(
-    serializeLangpackDiffToText).then(
-      console.log, logError);
+  cl.compareLangpacksInSource(
+    program, appPath, sourceLocale, locale).then(
+      serializeLangpackDiffToText).then(
+        console.log, logError);
 }
 
 function compareL10nDirToSource(appPath, sourceLocale, langPath, lang) {
-  cl.compareL10nDirToSource(appPath, sourceLocale, langPath, lang).then(
-    serializeLangpackDiffToText).then(
-      console.log, logError);
+  cl.compareL10nDirToSource(
+    program, appPath, sourceLocale, langPath, lang).then(
+      serializeLangpackDiffToText).then(
+        console.log, logError);
 }
 
 function compareDirs(path1, path2, output) {
   var serializerPath = '../lib/mozilla/diff/serializer/'+output+'.js';
   var serializeLangpackDiff =
     require(serializerPath).serializeLangpackDiff;
-  cl.compareDirs(path1, path2).then(
-    serializeLangpackDiff).then(
-      console.log, logError);
+  cl.compareDirs(
+    program, path1, path2).then(
+      serializeLangpackDiff).then(
+        console.log, logError);
+}
+
+function checkMore(v, total) {
+  return levels.getLower(total);
 }
 
 program
@@ -42,6 +50,8 @@ program
   .option('-l, --gaia-l10n <dir>', 'Gaia l10n dir')
   .option('-o, --output <json|text>', 'Output type (default: text)', 'text')
   .option('-s, --source-locale <locale>', 'Source locale')
+  .option('-c, --check-more', 'Check more (can be used more than once)',
+          checkMore, levels.CRITICAL)
   .parse(process.argv);
 
 var appPath = program.app;

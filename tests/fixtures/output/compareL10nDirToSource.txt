@@ -2,12 +2,8 @@
     +shortTimeFormat12
     +shortTimeFormat24
 locales/clock.fr.properties
-    ~alarmName
-        !.placeholder: Unknown placeables: name.
     ~lap-number
         -.ariaLabel
-        !value: Missing placeables: n.
-        !value: Unknown placeables: m, k.
     +alarm-volume-label
     -enable
     -back
