@@ -14,16 +14,9 @@ function logError(e) {
   console.log(e.stack);
 }
 
-function compareLangpacksInSource(appPath, sourceLocale, locale) {
-  cl.compareLangpacksInSource(
-    program, appPath, sourceLocale, locale).then(
-      serializeLangpackDiffToText).then(
-        console.log, logError);
-}
-
-function compareL10nDirToSource(appPath, sourceLocale, langPath, lang) {
+function compareL10nDirToSource(sourcePath, treePath, lang) {
   cl.compareL10nDirToSource(
-    program, appPath, sourceLocale, langPath, lang).then(
+    program, sourcePath, treePath, lang).then(
       serializeLangpackDiffToText).then(
         console.log, logError);
 }
@@ -45,27 +38,21 @@ function checkMore(v, total) {
 program
   .version('0.0.1')
   .usage('[options] locale[, locale]')
-  .option('-g, --gaia <dir>', 'Gaia dir')
-  .option('-a, --app <dir>', 'App dir')
-  .option('-l, --gaia-l10n <dir>', 'Gaia l10n dir')
+  .option('-t, --type <gaia|gecko>', 'Test type (default: gaia)')
+  .option('-s, --source <dir>', 'App source repository')
+  .option('-l, --l10n-tree <dir>', 'L10n Tree directory')
   .option('-o, --output <json|text>', 'Output type (default: text)', 'text')
-  .option('-s, --source-locale <locale>', 'Source locale')
   .option('-c, --check-more', 'Check more (can be used more than once)',
           checkMore, levels.CRITICAL)
   .parse(process.argv);
 
-var appPath = program.app;
-var l10nPath = program.gaiaL10n;
-var sourceLocale = program.sourceLocale;
+var sourcePath = program.source;
+var l10nTreePath = program.l10nTree;
 var locales = program.args;
 var output = program.output;
 
-if (!appPath) {
-  return compareDirs(locales[0], locales[1], output);
-}
-
-if (l10nPath) {
-  compareL10nDirToSource(appPath, sourceLocale, l10nPath, locales[0]);
+if (l10nTreePath) {
+  compareL10nDirToSource(sourcePath, l10nTreePath, locales[0]);
 } else {
-  compareLangpacksInSource(appPath, sourceLocale, locales[0]);
+  compareDirs(locales[0], locales[1], output);
 }

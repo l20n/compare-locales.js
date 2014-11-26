@@ -1,7 +1,6 @@
-/shared/locales/date/date.fr.properties
-    +shortTimeFormat12
-    +shortTimeFormat24
-locales/clock.fr.properties
+apps/clock/alarms.properties
+    // add and localize this file
+apps/clock/clock.properties
     ~lap-number
         -.ariaLabel
     +alarm-volume-label
@@ -10,12 +9,13 @@ locales/clock.fr.properties
     -label
     -default
     -color
-locales/alarms.fr.properties
-    // add and localize this file
+shared/date/date.properties
+    +shortTimeFormat12
+    +shortTimeFormat24
 ==================
-unchanged: 5
-changed: 122
+unchanged: 13
+changed: 196
 obsolete: 5
 missing: 3
 malformed: 1
-93% of entries changed
+92% of entries changed

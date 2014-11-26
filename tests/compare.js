@@ -32,7 +32,7 @@ function logError(e) {
   console.error(e.stack);
 }
 
-var appPath = path.join(__dirname, 'fixtures', 'apps', 'clock');
+var sourcePath = path.join(__dirname, 'fixtures', 'gaia');
 var l10nPath = path.join(__dirname, 'fixtures', 'locales');
 var enUSPath = path.join(__dirname, 'fixtures', 'locales', 'en-US');
 var frPath = path.join(__dirname, 'fixtures', 'locales', 'fr');
@@ -40,15 +40,8 @@ var frPath = path.join(__dirname, 'fixtures', 'locales', 'fr');
 suite('Comparison modes', function() {
   var config = {};
 
-  test('compare langpacks in source', function(done) {
-    cl.compareLangpacksInSource(config, appPath, null, 'fr').then(
-      serializeLangpackDiffToText).then(
-        checkOutput.bind(null, done, 'compareLangpacksInSource'))
-          .catch(logError);
-  });
-
   test('compare l10n dir to source', function(done) {
-    cl.compareL10nDirToSource(config, appPath, null, l10nPath, 'fr').then(
+    cl.compareL10nDirToSource(config, sourcePath, l10nPath, 'fr').then(
       serializeLangpackDiffToText).then(
         checkOutput.bind(null, done, 'compareL10nDirToSource'))
           .catch(logError);

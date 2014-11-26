@@ -1,12 +1,8 @@
 apps/clock/alarms.properties
     // add and localize this file
 apps/clock/clock.properties
-    ~alarmName
-        !.placeholder ERROR: Unknown placeables: name.
     ~lap-number
         -.ariaLabel
-        !value ERROR: Missing placeables: n.
-        !value ERROR: Unknown placeables: m, k.
     +alarm-volume-label
     -enable
     -back
@@ -17,10 +13,9 @@ shared/date/date.properties
     +shortTimeFormat12
     +shortTimeFormat24
 ==================
-unchanged: 13
-changed: 196
+unchanged: 5
+changed: 124
 obsolete: 5
 missing: 3
 malformed: 1
-errors: 3
-92% of entries changed
+93% of entries changed
