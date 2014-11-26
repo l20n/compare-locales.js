@@ -38,7 +38,9 @@ var enUSPath = path.join(__dirname, 'fixtures', 'locales', 'en-US');
 var frPath = path.join(__dirname, 'fixtures', 'locales', 'fr');
 
 suite('Comparison modes', function() {
-  var config = {};
+  var config = {
+    type: 'gaia'
+  };
 
   test('compare l10n dir to source', function(done) {
     cl.compareL10nDirToSource(config, sourcePath, l10nPath, 'fr').then(
@@ -59,6 +61,7 @@ suite('Comparison modes', function() {
 suite('Checks', function() {
   test('rogue placeables are reported as errors', function(done) {
     var config = {
+      type: 'gaia',
       checkMore: levels.WARNING
     };
 
@@ -72,6 +75,7 @@ suite('Checks', function() {
     function(done) {
 
     var config = {
+      type: 'gaia',
       checkMore: levels.CRITICAL
     };
 

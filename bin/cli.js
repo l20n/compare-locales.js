@@ -38,7 +38,7 @@ function checkMore(v, total) {
 program
   .version('0.0.1')
   .usage('[options] locale[, locale]')
-  .option('-t, --type <gaia|gecko>', 'Test type (default: gaia)')
+  .option('-t, --type <gaia|gecko>', 'App type (default: gaia)', 'gaia')
   .option('-s, --source <dir>', 'App source repository')
   .option('-l, --l10n-tree <dir>', 'L10n Tree directory')
   .option('-o, --output <json|text>', 'Output type (default: text)', 'text')
