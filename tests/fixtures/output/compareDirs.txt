@@ -14,7 +14,7 @@ shared/date/date.properties
     +shortTimeFormat24
 ==================
 unchanged: 13
-changed: 196
+changed: 198
 obsolete: 5
 missing: 3
 malformed: 1
