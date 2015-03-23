@@ -42,7 +42,7 @@ suite('Comparison modes', function() {
     type: 'gaia'
   };
 
-  test.skip('compare l10n dir to source', function(done) {
+  test('compare l10n dir to source', function(done) {
     cl.compareL10nDirToSource(config, sourcePath, l10nPath, 'fr').then(
       serializeLangpackDiffToText).then(
         checkOutput.bind(null, done, 'compareL10nDirToSource'))
