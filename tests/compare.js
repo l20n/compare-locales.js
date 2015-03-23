@@ -58,7 +58,7 @@ suite('Comparison modes', function() {
 
 });
 
-suite.skip('Checks', function() {
+suite('Checks', function() {
   test('rogue placeables are reported as errors', function(done) {
     var config = {
       type: 'gaia',
