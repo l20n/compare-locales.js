@@ -22,7 +22,7 @@ function compareL10nDirToSource(sourcePath, treePath, lang) {
 }
 
 function compareDirs(path1, path2, output) {
-  var serializerPath = '../lib/mozilla/diff/serializer/'+output+'.js';
+  var serializerPath = '../lib/mozilla/diff/serializer/' + output + '.js';
   var serializeLangpackDiff =
     require(serializerPath).serializeLangpackDiff;
   cl.compareDirs(
