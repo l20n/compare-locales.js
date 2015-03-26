@@ -21,6 +21,7 @@ unchanged: 13
 changed: 198
 obsolete: 5
 missing: 3
+missingInFiles: 12
 malformed: 1
 errors: 3
 92% of entries changed
