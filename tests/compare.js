@@ -62,7 +62,8 @@ suite('Checks', function() {
   test('rogue placeables are reported as errors', function(done) {
     var config = {
       type: 'gaia',
-      checkMore: levels.WARNING
+      checkMore: levels.WARNING,
+      runTests: 'placeables'
     };
 
     cl.compareDirs(config, enUSPath, frPath).then(
@@ -76,7 +77,8 @@ suite('Checks', function() {
 
     var config = {
       type: 'gaia',
-      checkMore: levels.CRITICAL
+      checkMore: levels.CRITICAL,
+      runTests: 'placeables'
     };
 
     cl.compareDirs(config, enUSPath, frPath).then(
