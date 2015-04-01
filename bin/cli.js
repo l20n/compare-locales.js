@@ -16,19 +16,21 @@ function logError(e) {
 
 function compareL10nDirToSource(sourcePath, treePath, lang) {
   cl.compareL10nDirToSource(
-    program, sourcePath, treePath, lang).then(
-      serializeLangpackDiffToText).then(
-        console.log, logError);
+    program,
+    sourcePath,
+    treePath,
+    lang
+  ).then(serializeLangpackDiffToText).then(console.log, logError);
 }
 
 function compareDirs(path1, path2, output) {
   var serializerPath = '../lib/mozilla/diff/serializer/' + output + '.js';
-  var serializeLangpackDiff =
-    require(serializerPath).serializeLangpackDiff;
+  var serializeLangpackDiff = require(serializerPath).serializeLangpackDiff;
   cl.compareDirs(
-    program, path1, path2).then(
-      serializeLangpackDiff).then(
-        console.log, logError);
+    program,
+    path1,
+    path2
+  ).then(serializeLangpackDiff).then(console.log, logError);
 }
 
 function checkMore(v, total) {
@@ -41,9 +43,10 @@ program
   .option('-t, --type <gaia|gecko>', 'App type (default: gaia)', 'gaia')
   .option('-s, --source <dir>', 'App source repository')
   .option('-l, --l10n-tree <dir>', 'L10n Tree directory')
-  .option('-o, --output <json|text|pike>', 'Output type (default: text)', 'text')
+  .option('-o, --output <json|text|pike>', 'Output type (default: text)',
+    'text')
   .option('-c, --check-more', 'Check more (can be used more than once)',
-          checkMore, levels.CRITICAL)
+    checkMore, levels.CRITICAL)
   .parse(process.argv);
 
 var sourcePath = program.source;
