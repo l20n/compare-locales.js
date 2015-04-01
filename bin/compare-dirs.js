@@ -17,8 +17,7 @@ function compareDirs(path1, path2, output) {
     program,
     path1,
     path2
-  )
-  .then(serializeLangpackDiff).then(console.log, logError);
+  ).then(serializeLangpackDiff).then(console.log, logError);
 }
 
 program
