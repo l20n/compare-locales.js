@@ -39,7 +39,8 @@ var frPath = path.join(__dirname, 'fixtures', 'locales', 'fr');
 
 suite('Comparison modes', function() {
   var config = {
-    type: 'gaia'
+    type: 'gaia',
+    runTests: 'malformed',
   };
 
   test('compare l10n dir to source', function(done) {
@@ -62,8 +63,7 @@ suite('Checks', function() {
   test('rogue placeables are reported as errors', function(done) {
     var config = {
       type: 'gaia',
-      checkMore: levels.WARNING,
-      runTests: 'placeables'
+      runTests: 'placeables, malformed'
     };
 
     cl.compareDirs(config, enUSPath, frPath).then(
@@ -72,13 +72,12 @@ suite('Checks', function() {
           .catch(logError);
   });
 
-  test('rogue placeables are not reported if config accepts only criticals',
+  test('rogue placeables are not reported if the hook is not enabled',
     function(done) {
 
     var config = {
       type: 'gaia',
-      checkMore: levels.CRITICAL,
-      runTests: 'placeables'
+      runTests: 'malformed'
     };
 
     cl.compareDirs(config, enUSPath, frPath).then(

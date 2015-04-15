@@ -7,6 +7,7 @@ apps/clock/clock.properties
         -.ariaLabel
         !value ERROR: Missing placeables: n.
         !value ERROR: Unknown placeables: m, k.
+        !value WARNING: attribute `ariaLabel` obsolete in translation
     +alarm-volume-label
     -enable
     -back
@@ -22,6 +23,6 @@ changed: 198
 obsolete: 5
 missing: 3
 missingInFiles: 12
-malformed: 1
+warnings: 1
 errors: 3
 92% of entries changed

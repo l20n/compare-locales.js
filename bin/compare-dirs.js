@@ -24,8 +24,8 @@ program
   .version('0.0.1')
   .usage('[options] reference locale')
   .option('-t, --type <gaia|gecko>', 'App type (default: gaia)', 'gaia')
-  .option('--data <text|json|exhibit>', 'Output type (default: text)',
-    'text')
+  .option('--data <compat_text|json|exhibit>', 'Output type (default: compat_text)',
+    'compat_text')
   .option('-r, --run-tests <tests>', 'Run tests', '')
   .parse(process.argv);
 

@@ -3,6 +3,7 @@ apps/clock:alarms.properties
 apps/clock:clock.properties
     ~lap-number
         -.ariaLabel
+        !value WARNING: attribute `ariaLabel` obsolete in translation
     +alarm-volume-label
     -enable
     -back
@@ -20,5 +21,5 @@ changed: 196
 obsolete: 5
 missing: 3
 missingInFiles: 12
-malformed: 1
+warnings: 1
 92% of entries changed
