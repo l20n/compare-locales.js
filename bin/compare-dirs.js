@@ -24,13 +24,15 @@ program
   .version('0.0.1')
   .usage('[options] reference locale')
   .option('-t, --type <gaia|gecko>', 'App type (default: gaia)', 'gaia')
-  .option('--data <compat_text|json|exhibit>', 'Output type (default: compat_text)',
+  .option('--data <text|json|exhibit>', 'Output type (default: text)',
     'compat_text')
   .option('-r, --run-tests <tests>', 'Run tests', '')
   .parse(process.argv);
 
 var dirs = program.args;
-var output = program.data;
+
+// For compatibility we use compat_text here
+var output = program.data == 'text' ? 'compat_text': program.data;
 
 if (dirs.length < 2) {
   console.log('Usage: compare-dirs [options] reference locale\n');
