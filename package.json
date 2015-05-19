@@ -35,7 +35,6 @@
   ],
   "dependencies": {
     "commander": "^2.5.0",
-    "deep-equal": "^0.2.1",
     "jsdom": "^1.0.3"
   },
   "engine": {
