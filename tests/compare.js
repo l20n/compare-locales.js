@@ -87,3 +87,18 @@ suite('Checks', function() {
   });
 
 });
+
+suite('Compare compat', function() {
+  var config = {
+    type: 'compat_gaia',
+    data: 'compat_text',
+    runTests: 'escapes',
+  };
+  test('compare dirs for elmo', function(done) {
+    var serialize = require('../lib/mozilla/diff/serializer/compat_text')
+      .serializeLangpackDiff;
+    cl.compareDirs(config, enUSPath, frPath).then(serialize).then(
+      checkOutput.bind(null, done, 'compareDirsCompat'))
+        .catch(logError);
+  });
+});
