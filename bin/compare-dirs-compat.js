@@ -23,17 +23,22 @@ function compareDirs(path1, path2, output) {
 program
   .version('0.0.1')
   .usage('[options] reference locale')
-  .option('-t, --type <gaia|gecko>', 'App type (default: gaia)', 'gaia')
+  .option('-t, --type <gaia|compat_gaia|gecko>',
+    'App type (default: gaia)', 'gaia')
   .option('--data <text|json|exhibit>', 'Output type (default: text)', 'text')
-  .option('-r, --run-tests <tests>', 'Run tests', 'escapes, malformed')
+  .option('-r, --run-tests <tests>', 'Run tests', 'escapes')
   .parse(process.argv);
 
 
 var dirs = program.args;
 
+// For compatibility we use compat_text here
+var output = program.data == 'text' ? 'compat_text': program.data;
+program.type = program.type === 'gaia' ? 'compat_gaia' : program.type;
+
 if (dirs.length < 2) {
   console.log('Usage: compare-dirs [options] reference locale\n');
   console.error('compare-dirs: error: Reference and localization required');
 } else {
-  compareDirs(dirs[0], dirs[1], program.data);
+  compareDirs(dirs[0], dirs[1], output);
 }
