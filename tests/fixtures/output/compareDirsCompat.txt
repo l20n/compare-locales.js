@@ -1,19 +1,20 @@
-apps/clock/alarms.properties
-    // add and localize this file
-apps/clock/clock.properties
-    +alarm-volume-label
-    -enable
-    -back
-    -label
-    -lap-number.ariaLabel
-    -default
-    -color
+apps/clock
+  alarms.properties
+      // add and localize this file
+  clock.properties
+      +alarm-volume-label
+      -back
+      -color
+      -default
+      -enable
+      -label
+      -lap-number.ariaLabel
 shared/date/date.properties
     +shortTimeFormat12
     +shortTimeFormat24
-unchanged: 55
 changed: 312
-obsolete: 6
 missing: 3
 missingInFiles: 12
+obsolete: 6
+unchanged: 55
 81% of entries changed
