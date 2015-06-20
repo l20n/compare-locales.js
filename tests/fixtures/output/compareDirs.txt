@@ -1,23 +1,20 @@
-apps/clock/alarms.properties
-    // add and localize this file
-apps/clock/clock.properties
-    ~lap-number
-        -.ariaLabel
-        !value WARNING: attribute `ariaLabel` obsolete in translation
-    +alarm-volume-label
-    -enable
-    -back
-    -label
-    -default
-    -color
+apps/clock
+  alarms.properties
+      // add and localize this file
+  clock.properties
+      +alarm-volume-label
+      -back
+      -color
+      -default
+      -enable
+      -label
+      -lap-number.ariaLabel
 shared/date/date.properties
     +shortTimeFormat12
     +shortTimeFormat24
-==================
-unchanged: 13
-changed: 198
-obsolete: 5
+changed: 312
 missing: 3
 missingInFiles: 12
-warnings: 1
-92% of entries changed
+obsolete: 6
+unchanged: 55
+81% of entries changed

@@ -1,28 +1,34 @@
-apps/clock/alarms.properties
-    // add and localize this file
-apps/clock/clock.properties
-    ~alarmName
-        !.placeholder ERROR: Unknown placeables: name.
-    ~lap-number
-        -.ariaLabel
-        !value ERROR: Missing placeables: n.
-        !value ERROR: Unknown placeables: m, k.
-        !value WARNING: attribute `ariaLabel` obsolete in translation
-    +alarm-volume-label
-    -enable
-    -back
-    -label
-    -default
-    -color
+apps/clock
+  alarms.properties
+      // add and localize this file
+  clock.properties
+      +alarm-volume-label
+      ~alarmName.placeholder
+          ERROR: Unknown placeables: name.
+      -back
+      -color
+      -default
+      -enable
+      -label
+      ~lap-number
+          ERROR: Missing placeables: n.
+          ERROR: Unknown placeables: m, k.
+      -lap-number.ariaLabel
 shared/date/date.properties
+    ~hours-ago-long[one]
+        ERROR: Unknown placeables: value.
+    ~hours-until-long[one]
+        ERROR: Unknown placeables: value.
+    ~minutes-ago-long[one]
+        ERROR: Unknown placeables: value.
+    ~minutes-until-long[one]
+        ERROR: Unknown placeables: value.
     +shortTimeFormat12
     +shortTimeFormat24
-==================
-unchanged: 13
-changed: 198
-obsolete: 5
+changed: 312
 missing: 3
 missingInFiles: 12
-warnings: 1
-errors: 3
-92% of entries changed
+obsolete: 6
+unchanged: 55
+errors: 7
+81% of entries changed
